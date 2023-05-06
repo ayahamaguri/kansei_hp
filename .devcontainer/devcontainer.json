@@ -21,7 +21,15 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true
       },
-	// "customizations": {},
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "christian-kohler.path-intellisense",
+        "mhutchie.git-graph",
+        "VisualStudioExptTeam.vscodeintellicode",
+        "formulahendry.auto-rename-tag",
+        "formulahendry.auto-close-tag"
+      ]
     }
   }
 

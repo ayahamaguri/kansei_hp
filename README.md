@@ -1,3 +1,5 @@
 # kansei_hp
+
 ## アプリのはじめかた
-npm run start
+
+npm run dev

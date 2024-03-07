@@ -7,29 +7,32 @@
         ><v-icon color="#fedd6b">mdi-star</v-icon>Company</v-card-title
       >
       <!-- <div style="margin: 0 40px">
-      <div>
-        お客様の満足向上のため、絶えず想像し挑戦する会社であり続けます。
-      </div>
-      <div>
-        お客様をサポートする最良のパートナーを目指し、ベストサ－ビス・ベストプロダクトを提供します。
-      </div>
-      <div>
-        まだまだ未熟な私共ですが、関係する方々との信頼関係を構築し、今後も邁進していく所存でございます。
-      </div>
-      <div>ご愛顧・ご支援のほど、よろしくお願い申し上げます。</div>
+        <div>
+          お客様の満足向上のため、絶えず想像し挑戦する会社であり続けます。
+        </div>
+        <div>
+          お客様をサポートする最良のパートナーを目指し、ベストサ－ビス・ベストプロダクトを提供します。
+        </div>
+        <div>
+          まだまだ未熟な私共ですが、関係する方々との信頼関係を構築し、今後も邁進していく所存でございます。
+        </div>
+        <div>ご愛顧・ご支援のほど、よろしくお願い申し上げます。</div>
       </div> -->
       <!-- <div class="py-5" /> -->
     </v-card>
 
-      <v-simple-table style="white-space: pre-wrap">
-        <tbody>
-          <tr v-for="(item, index) in companyInfo" :key="index">
-            <th>{{ item.header }}</th>
-            <td>{{ addLineBreaks(item.body) }}</td>
-          </tr>
-        </tbody>
-      </v-simple-table>
-    </div>
+    <v-card class="rounded-card">
+      <v-card-text>
+        <v-simple-table style="white-space: pre-wrap">
+          <tbody>
+            <tr v-for="(item, index) in companyInfo" :key="index">
+              <th>{{ item.header }}</th>
+              <td>{{ addLineBreaks(item.body) }}</td>
+            </tr>
+          </tbody>
+        </v-simple-table>
+      </v-card-text>
+    </v-card>
   </v-container>
 </template>
 <script lang="ts">
@@ -102,5 +105,9 @@ export default {
 <style scoped>
 .v-simple-table >>> td {
   white-space: pre-wrap;
+}
+
+.rounded-card {
+  border-radius: 25px; /* 丸い角の半径を指定 */
 }
 </style>

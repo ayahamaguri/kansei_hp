@@ -71,9 +71,9 @@
     </v-app-bar>
 
     <v-main>
-      <v-container>
-        <Nuxt />
-      </v-container>
+      <!-- <v-container> -->
+      <Nuxt />
+      <!-- </v-container> -->
     </v-main>
 
     <v-footer color="#003f67" dark>

@@ -50,14 +50,14 @@ export default {
   },
 }
 </script>
-<style scoped lang="scss">
+<style scoped>
 .background-image-container {
   background-image: url('@/assets/root_bg.jpg'); /* 画像のパスを正しく指定する */
   background-size: cover;
   background-position: center;
-  height: 85vh; /* 画面の高さの85%に調整 */
-  width: 90vw; /* 画面の幅の90%に調整 */
-  margin: auto; /* 中央寄せのために追加 */
+  height: 100vh; /* 画面の高さの85%に調整 */
+  width: 100vw; /* 画面の幅の90%に調整 */
+  margin: 0; /* 中央寄せのために追加 */
 }
 /* スマホ版のスタイル */
 @media screen and (max-width: 600px) {

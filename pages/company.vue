@@ -1,9 +1,12 @@
 <template>
   <v-container>
-    <h1 class="text-h4 font-weight-bold">お客様のNo.1企業を目指して</h1>
-    <div class="py-2" />
-    <!-- 左右に10pxの余白を持つ親要素 -->
-    <div style="margin: 0 10px">
+    <!-- <h1 class="text-h4 font-weight-bold">お客様のNo.1企業を目指して</h1> -->
+    <!-- <div class="py-2" /> -->
+    <v-card flat>
+      <v-card-title
+        ><v-icon color="#fedd6b">mdi-star</v-icon>Company</v-card-title
+      >
+      <!-- <div style="margin: 0 40px">
       <div>
         お客様の満足向上のため、絶えず想像し挑戦する会社であり続けます。
       </div>
@@ -14,7 +17,9 @@
         まだまだ未熟な私共ですが、関係する方々との信頼関係を構築し、今後も邁進していく所存でございます。
       </div>
       <div>ご愛顧・ご支援のほど、よろしくお願い申し上げます。</div>
-      <div class="py-5" />
+      </div> -->
+      <!-- <div class="py-5" /> -->
+    </v-card>
 
       <v-simple-table style="white-space: pre-wrap">
         <tbody>

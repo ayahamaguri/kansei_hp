@@ -2,8 +2,11 @@
   <v-container>
     <h1 class="text-h4 font-weight-bold">Recruitment</h1>
     <div class="py-2" />
-    <!-- 左右に10pxの余白を持つ親要素 -->
-    <div style="margin: 0 10px">
+    <v-card flat>
+      <v-card-title
+        ><v-icon color="#fedd6b">mdi-star</v-icon>Message</v-card-title
+      >
+      <div style="margin: 0 40px">
       <div>
         少子高齢化社会が確実に到来し、近未来における労働力人口問題は、今後ますます深刻化していきそうです。
       </div>
@@ -16,6 +19,8 @@
       <div>
         弊社は、生き生きと働き喜びを感じる人とのコミュニケーションを大切にしていきたいと願っております。
       </div>
+      </div>
+    </v-card>
       <div class="py-5" />
 
       <v-simple-table style="white-space: pre-wrap">

@@ -19,22 +19,42 @@
               <!-- </v-row> -->
               <!-- <v-row> -->
               <v-col class="d-flex justify-center">
-                <v-btn depressed color="#ffffff" to="/">ホーム</v-btn>
+                <v-btn depressed color="#ffffff" to="/" @click="closeModal"
+                  >ホーム</v-btn
+                >
               </v-col>
               <!-- </v-row> -->
               <!-- <v-row> -->
               <v-col class="d-flex justify-center">
-                <v-btn depressed color="#ffffff" to="/company">会社概要</v-btn>
+                <v-btn
+                  depressed
+                  color="#ffffff"
+                  to="/company"
+                  @click="closeModal"
+                  >会社概要</v-btn
+                >
               </v-col>
               <!-- </v-row> -->
               <!-- <v-row> -->
               <v-col class="d-flex justify-center">
-                <v-btn depressed color="#ffffff" to="/service">サービス</v-btn>
+                <v-btn
+                  depressed
+                  color="#ffffff"
+                  to="/service"
+                  @click="closeModal"
+                  >サービス</v-btn
+                >
               </v-col>
               <!-- </v-row> -->
               <!-- <v-row> -->
               <v-col class="d-flex justify-center">
-                <v-btn depressed color="#ffffff" to="/recruit">採用情報</v-btn>
+                <v-btn
+                  depressed
+                  color="#ffffff"
+                  to="/recruit"
+                  @click="closeModal"
+                  >採用情報</v-btn
+                >
               </v-col>
               <!-- </v-row> -->
             </v-card>

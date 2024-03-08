@@ -27,7 +27,16 @@
           <tbody>
             <tr v-for="(item, index) in companyInfo" :key="index">
               <th>{{ item.header }}</th>
-              <td>{{ addLineBreaks(item.body) }}</td>
+              <td>
+                <!-- v-ifで文字列に"http"が含まれている場合はハイパーリンクにする -->
+                <template v-if="item.body.includes('http')">
+                  <a :href="item.body" target="_blank">{{
+                    addLineBreaks(item.body)
+                  }}</a>
+                </template>
+                <!-- それ以外の場合はそのまま表示 -->
+                <template v-else> {{ addLineBreaks(item.body) }}</template>
+              </td>
             </tr>
           </tbody>
         </v-simple-table>
@@ -66,8 +75,8 @@ export default {
         body: '雇用保険、厚生年金、健康保険、労災保険',
       },
       {
-        header: '採用条件',
-        body: '学歴・職歴不問。未経験OK！幅広い年代の方が活躍中！',
+        header: 'ご応募はこちらから',
+        body: 'https://en-gage.net/kansaistar_saiyo/',
       },
     ])
 

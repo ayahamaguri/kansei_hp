@@ -3,24 +3,18 @@
     <v-container class="fill-height">
       <v-responsive class="align-center text-center fill-height">
         <div v-if="isMobile" class="py-5" />
-        <img v-if="isMobile" height="100" src="@/assets/logo2.svg" />
-        <div v-if="isMobile" class="py-5" />
-        <img v-else height="300" width="1200" src="@/assets/logo2.svg" />
-
-        <h1
+        <img
           v-if="isMobile"
-          class="text-h3 font-weight-bold"
-          style="color: #f5f3f2"
-        >
-          株式会社関星
-        </h1>
-        <h1
+          height="150"
+          src="@/assets/logo_title_msg_isMobile3.png"
+        />
+        <!-- <div v-if="isMobile" class="py-5" /> -->
+        <img
           v-else
-          class="text-h2 font-weight-bold custom-font"
-          style="color: #f5f3f2; font-family: 'CustomFont', sans-serif"
-        >
-          株式会社関星
-        </h1>
+          height="300"
+          width="1200"
+          src="@/assets/logo_title_msg3.svg"
+        />
       </v-responsive>
     </v-container>
   </div>

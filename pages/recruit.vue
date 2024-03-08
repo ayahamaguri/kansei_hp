@@ -1,7 +1,5 @@
 <template>
   <v-container>
-    <h1 class="text-h4 font-weight-bold">Recruitment</h1>
-    <div class="py-2" />
     <v-card flat>
       <v-card-title
         ><v-icon color="#fedd6b">mdi-star</v-icon>Message</v-card-title

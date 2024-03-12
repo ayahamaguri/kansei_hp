@@ -24,7 +24,12 @@
           />
         </div>
         <div v-else class="image-container">
-          <img class="slide-up-animation" src="@/assets/message.png" />
+          <img
+            class="slide-up-animation"
+            height="50"
+            width="700"
+            src="@/assets/message.png"
+          />
           <div class="bottom-row">
             <img height="150" src="@/assets/starLogo.png" />
             <img
